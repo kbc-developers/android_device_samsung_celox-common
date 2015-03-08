@@ -38,6 +38,7 @@ on fs
     mkdir /tombstones/lpass 0771 system system
 
     mount_all fstab.qcom
+    swapon_all fstab.qcom
 
 on post-fs-data
     mkdir /system/etc/firmware/misc 0771 system system
